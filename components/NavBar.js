@@ -6,8 +6,8 @@ export default function NavBar() {
   const sections = ['home', 'about', 'projects', 'contact'];
 
   return (
-    <nav className='flex items-center justify-between w-full px-4 h-16 text-[#333] sm:shadow-lg'>
-      <div className='flex items-center gap-2'>
+    <nav className=' flex items-center justify-between w-full px-5 h-16 text-[#333] sm:shadow-lg'>
+      <div className='flex items-center gap-3'>
         <Image src={'/man.png'} alt='Avatar' width={40} height={40} />
         <p className='font-bold tracking-wide '>MOHAMED KAMAL</p>
       </div>
@@ -49,14 +49,17 @@ export default function NavBar() {
         )}
       </button>
       <ul
-        className={`${
+        className={`bg-white ${
           showMenu
             ? 'opacity-100'
             : 'opacity-0 invisible sm:opacity-100 sm:visible'
-        } transition-all duration-500 flex flex-col sm:flex-row absolute sm:static inset-x-0 top-16 shadow-lg sm:shadow-none sm:border-none`}
+        } transition-all duration-200 flex flex-col sm:flex-row absolute sm:static inset-x-0 top-16 shadow-lg sm:shadow-none sm:border-none`}
       >
         {sections.map((section) => (
-          <li className='cursor-pointer px-5 py-6 text-sm font-bold text-right border-t-[1px] border-[#eee]'>
+          <li
+            key={section}
+            className='cursor-pointer px-5 py-6 text-sm font-bold text-right border-t-[1px] border-[#eee]'
+          >
             <a className='uppercase' href={`#${section}`}>
               {section}
             </a>

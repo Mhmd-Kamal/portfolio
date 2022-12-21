@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import NavBar from '../components/NavBar';
+import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,9 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
-      <main className='flex flex-col items-center justify-center flex-1 w-full'></main>
+      <main className='flex flex-col items-center flex-1 w-full'>
+        <Hero />
+      </main>
     </div>
   );
 };
