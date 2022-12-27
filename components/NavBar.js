@@ -6,7 +6,7 @@ export default function NavBar() {
   const sections = ["home", "about", "projects", "contact"];
 
   return (
-    <nav className="fixed top-0 bg-white flex items-center justify-between w-full px-5 min-h-[4rem]  text-[#333] sm:shadow-lg">
+    <nav className="fixed top-0 bg-white flex items-center justify-between w-full px-[5%] min-h-[4rem]  text-[#333] sm:shadow-lg">
       <div className="flex items-center gap-3">
         <Image src={"/man.png"} alt="Avatar" width={40} height={40} />
         <p className="font-bold tracking-wide ">MOHAMED KAMAL</p>

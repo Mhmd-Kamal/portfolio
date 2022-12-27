@@ -15,7 +15,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="px-5 bg-[#fafafa] py-20">
+    <section id="about" className="px-[5%] bg-[#fafafa] py-20">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col items-center gap-4">
           <h2 className="uppercase text-4xl text-[#111] tracking-widest font-bold text-center">
@@ -27,8 +27,8 @@ export default function About() {
             current skills mostly in terms of programming and technology
           </p>
         </div>
-        <div className="flex flex-col gap-[70px]">
-          <div className="flex flex-col gap-8 items-start">
+        <div className="flex flex-col gap-[70px] md:flex-row md:gap-28">
+          <div className="flex flex-col gap-8 items-start md:flex-1">
             <h3 className="font-bold text-2xl ">Get to know me!</h3>
             <div className="flex flex-col gap-2 text-[#666] leading-[1.7] text-justify">
               <p>
@@ -67,13 +67,14 @@ export default function About() {
               Contact
             </a>
           </div>
-          <div className="flex flex-col gap-8">
+
+          <div className="flex flex-col gap-8 md:flex-1">
             <h3 className="font-bold text-2xl">My Skills</h3>
             <div className="flex flex-wrap  gap-3">
               {skills.map((skill) => (
                 <div
                   key={skill}
-                  className="text-[#666] bg-gray-400/20 rounded-md px-4 py-2 font-semibold text-sm"
+                  className="text-[#666] bg-gray-400/20 rounded-md px-4 py-2 font-semibold text-sm md:text-base"
                 >
                   {skill}
                 </div>

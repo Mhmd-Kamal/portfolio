@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-slate-400/20 bg-[url('/common-bg.svg')] bg-blend-hue px-5 py-20 flex flex-col gap-20"
+      className="bg-slate-400/20 bg-[url('/common-bg.svg')] bg-blend-hue px-[5%] py-20 flex flex-col gap-20"
     >
       <div className="flex flex-col items-center gap-4">
         <h2 className="uppercase text-4xl text-[#111] tracking-widest font-bold text-center">
@@ -15,8 +15,12 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className="bg-white p-7 rounded-md shadow-[rgba(100,100,111,.2)_0_7px_29px_0]">
-        <form action="/" method="POST" className="flex flex-col gap-7">
+      <div className="flex justify-center">
+        <form
+          action="/"
+          method="POST"
+          className="flex flex-col gap-7 bg-white p-7 sm:p-10 rounded-md shadow-[rgba(100,100,111,.2)_0_7px_29px_0] w-full max-w-3xl"
+        >
           <div className="flex flex-col gap-2">
             <label
               htmlFor="name"
@@ -69,7 +73,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="shadow-lg cursor-pointer bg-[#facf0f] text-sm text-[#111] rounded-md font-bold tracking-wider uppercase inline-block px-[70px] py-4"
+            className="shadow-lg cursor-pointer bg-[#facf0f] text-sm text-[#111] rounded-md font-bold tracking-wider uppercase inline-block px-[70px] md:px-20 sm:text-base py-4 sm:self-end"
           >
             submit
           </button>

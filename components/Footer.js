@@ -2,8 +2,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-black px-4 w-full text-[#eee] divide-[#444] divide-y">
-      <div className="py-14 flex flex-col gap-11">
+    <footer className="bg-black px-[5%] w-full text-[#eee] divide-[#444] divide-y">
+      <div className="py-14 flex flex-col gap-11 md:flex-row-reverse md:justify-between md:gap-80">
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-xl tracking-wider">SOCIAL</h3>
           <div className="flex gap-2.5">
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-xl uppercase">mohamed kamal</h3>
-          <p className="text-sm leading-6">
+          <p className="text-sm leading-6 max-w-lg">
             A Frontend focused Web Developer building the Frontend of Websites
             and Web Applications that leads to the success of the overall
             product.
