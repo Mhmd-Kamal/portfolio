@@ -1,26 +1,30 @@
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
+  const { title, description, image, livePreview, github } = project;
+
   return (
     <div className="w-full flex flex-col gap-9 lg:gap-20 lg:flex-row lg:items-center">
-      <div className=" ">
-        <img src={"/projects/todo-app.jpg"} alt="project snapshot" />
+      <div className="flex-1">
+        <img src={image} alt="project snapshot" />
       </div>
-      <div className="flex flex-col items-center gap-6 lg:gap-10 lg:items-start">
-        <h3 className="font-bold text-xl">Yubter</h3>
-        <p className="text-center lg:text-left text-[#555] font-medium tracking-[1.5]">
-          Yubter is a platform that I created where people can join the
-          community of their favorite youtube channels and can be part of the
-          conversation.
-        </p>
+
+      <div className="flex flex-1 flex-col items-center gap-6 lg:gap-10 lg:items-start">
+        <h3 className="font-bold text-xl">{title}</h3>
+        <p
+          className="text-center lg:text-left text-[#555] font-medium tracking-[1.5]"
+          dangerouslySetInnerHTML={{ __html: `${description.text}` }}
+        />
         <div className="flex items-center gap-4">
           <a
-            href="https://vercel.com/mhmd-kamal/rest-countries-api-with-color-theme-switcher"
+            href={livePreview}
             className="cursor-pointer text-[#111] bg-[#facf0f] tracking-widest font-bold px-7 py-3 inline-block uppercase rounded-md"
+            target="_blank"
           >
             View
           </a>
           <a
-            href="https://vercel.com/mhmd-kamal/rest-countries-api-with-color-theme-switcher"
+            href={github}
             className="cursor-pointer text-[#111] bg-[#facf0f] tracking-widest font-bold p-2.5 px-8  inline-block uppercase rounded-md"
+            target="_blank"
           >
             <svg className="w-7 h-7" viewBox="0 0 24 24">
               <path

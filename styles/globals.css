@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/fonts/SourceSansPro-Black.ttf');
+  src: url('/public/fonts/SourceSansPro-Black.ttf');
   font-weight: 900;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/fonts/SourceSansPro-Bold.ttf');
+  src: url('/public/fonts/SourceSansPro-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/fonts/SourceSansPro-SemiBold.ttf');
+  src: url('/public/fonts/SourceSansPro-SemiBold.ttf');
   font-weight: 600;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/fonts/SourceSansPro-Regular.ttf');
+  src: url('/public/fonts/SourceSansPro-Regular.ttf');
   font-weight: 400;
 }
 
@@ -25,6 +25,7 @@
 
 @layer base {
   html {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro' ,sans-serif;
+    scroll-behavior: smooth;
   }
 }

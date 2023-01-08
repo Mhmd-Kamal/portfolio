@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className='bg-slate-400/20 bg-[url("/common-bg.svg")] bg-blend-hue px-[5%] py-28 flex flex-col items-center gap-11 w-full'>
+    <section
+      id={"home"}
+      className='bg-slate-400/20 bg-[url("/common-bg.svg")] bg-blend-hue px-[5%] py-28 flex flex-col items-center gap-11 w-full'
+    >
       <h1 className="text-[#111] text-5xl font-extrabold leading-[1.5] tracking-wide text-center uppercase">
         Hey, I'm Mohamed Kamal
       </h1>
